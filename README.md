@@ -38,7 +38,7 @@ A GitHub repository containing:
 
 ### Hey, Mikey, I Think He Likes It Mode
 
-* Use media queries to make your application responsive. Mobile should display two-columns and desktop should display three columns (see two-column layout).
+Use media queries to make your application responsive. Mobile should display two-columns and desktop should display three columns (see two-column layout).
 
 ### Caffeinated Mode
 
