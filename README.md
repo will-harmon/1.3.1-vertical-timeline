@@ -30,7 +30,7 @@ A GitHub repository containing:
 
 1. basic page structure (html only)
 2. first line of css
-3. two column layout
+3. three column layout
 4. color added
 5. icons in place
 6. hover states and transitions implemented
