@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.fa-pencil-alt {
+  z-index: 50;
+}
+
+body {
+  background-color: #A9A9A9;
+}
+
+/* code for the boxes */
+.container {
+  position: relative;
+}
+
+div {
+  display: relative;
+}
+
+div:not(.container):not(.cir):not(.vl) {
+  width: 20%;
+  background-color: #F5F5F5;
+  border: solid black 2px;
+  overflow: auto;
+}
+
+.top-left {
+  display: block;
+  margin-left: 17%;
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+
+.middle-right {
+  float: right;
+  margin-right: 17%;
+  margin-bottom: 2%;
+}
+
+.bottom-left {
+  clear: right;
+  margin-left: 17%;
+}
+/* box on the left */
+
+
+
+/* vertical line */
+.vl {
+
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: 0px;
+  background: #245F8A;
+  top: 0;
+  width: 5px;
+  
+
+}
+.circle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background-color: #245F8A;
+  border: solid 3px #245F8A;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 48.9%;
+  margin-left: 0px;
+}
+
+.circle1 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background-color: #245F8A;
+  border: solid 3px #245F8A;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 48.9%;
+  margin-left: 0px;
+}
+
+.circle2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background-color: #245F8A;
+  border: solid 3px #245F8A;
+  border-radius: 50%;
+  position: absolute;
+  top: 450px;
+  left: 48.9%;
+  margin-left: 0px;
+}
+
+div {
+  word-break: break-all;
+}
