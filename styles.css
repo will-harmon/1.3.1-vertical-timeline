@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+}
+
 .fa-pencil-alt {
   z-index: 1;
   color: white;
@@ -12,6 +17,7 @@
 
 body {
   background-color: #A9A9A9;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* code for the boxes */
@@ -19,15 +25,11 @@ body {
   position: relative;
 }
 
-div {
-  display: relative;
-}
-
-div:not(.container):not(.cir):not(.vl):not(.more):not(.time) {
-  width: 20%;
+div:not(.container):not(.cir):not(.vl):not(.more):not(.time):not(.timeline-image) {
+  width: 25%;
   background-color: #F5F5F5;
-  border: solid white 2px;
-  overflow: auto;
+  /* overflow: auto; */
+  height: 200px;
 }
 
 .top-left {
@@ -35,20 +37,47 @@ div:not(.container):not(.cir):not(.vl):not(.more):not(.time) {
   display: block;
   margin-left: 17%;
   margin-top: 2%;
-  margin-bottom: 2%
+  margin-bottom: 2%;
+  border-radius: 2px;
 }
 
-.middle-right {
+.timeline-event::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: solid 15px #fff;
+  border-top: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  border-right: 0;
+  position: absolute;
+  right: -15px;
+}
+
+.timeline-event_even::after {
+  border-right: solid 15px #fff;
+  border-top: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  left: -15px;
+}
+
+
+
+.card-title-color {
   position: relative;
   float: right;
   margin-right: 17%;
   margin-bottom: 2%;
+  width: 25%;
+  background-color: #F5F5F5;
+  height: 275px;
+  border-radius: 2px;
 }
 
 .bottom-left {
   position: relative;
   clear: right;
   margin-left: 17%;
+  border-radius: 2px;
 }
 /* box on the left */
 
@@ -63,9 +92,8 @@ div:not(.container):not(.cir):not(.vl):not(.more):not(.time) {
   background: #245F8A;
   top: 0;
   width: 5px;
-
-
 }
+
 .circle {
   display: inline-block;
   vertical-align: middle;
@@ -107,22 +135,65 @@ div:not(.container):not(.cir):not(.vl):not(.more):not(.time) {
   left: 48.9%;
   margin-left: 0px;
 }
-.more {
+
+button {
   position: absolute;
   background-color: #245F8A;
   color: white;
   height: -5%;
   width: -5%;
-  margin-top: -10%;
-  margin-left: 1%;
+  margin-top: -7;
+  margin-left: 18px;
   font-size: 13px;
-  padding: 2px;
+  padding: 3px;
+  border-radius: 2px;
 }
+
 .time:not(.more) {
   background-color: #EC515C;
   position: absolute;
   right: 0;
   color: white;
-  border-top: 4px;
-  border-color: #EC515C;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.time-right-side {
+  background-color: #EC515C;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+p {
+  word-break: break-all;
+}
+
+.quote {
+  border-left: 4px solid #245F8A;
+  padding-left: 8px;
+}
+
+h2.left {
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+
+h2.right {
+  position: absolute;
+  bottom: -10px;
+  right: 5px;
+}
+
+.timeline-image {
+  color: white;
+  background-image: url("https://octodex.github.com/images/total-eclipse-of-the-octocat.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* position: absolute; */
+  width:100%;
+  height: 50%;
+  /* position: absolute; */
 }

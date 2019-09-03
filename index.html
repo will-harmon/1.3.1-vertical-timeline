@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="styles.css">
   <link rel="stylesheet" type="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,28 +20,34 @@
   <div class="container">
 
 
-    <div class="top-left">
+    <div class="timeline-event top-left">
       <div class="time">1 MAY 2016</div>
-      <h2>Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
-      <div class="more">MORE</div>
+      <h2 class="left">Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <button class="more">MORE</button>
     </div>
 
     <div class="vl"></div>
-    <div class="middle-right">
-      <div class="time">25 MAY 2016</div>
-      <h2>Card Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
-      <div class="more">MORE</div>
+
+      <div class="timeline-event timeline-event_even card-title-color">
+        <!-- position .timeline-image relative and add a background image -->
+        <div class="timeline-image">
+          <!-- position .time and h2 inside the .timeline-image using position properties -->
+          <span class="time-right-side">25 MAY 2016</span>
+          <h2 class="right">Card Title</h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <button class="more">MORE</button>
       </div>
 
-    <div class="bottom-left">
+    <div class="bottom-left timeline-event">
     <div class="time">3 June 2016</div>
-    <h2>Quote</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
-    <div class="more">MORE</div>
-    </div>
+    <h2 class="left">Quote</h2>
+      <blockquote><p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p></blockquote>
+    <button class="more">MORE</button>
   </div>
+</div>
 </section>
 </body>
 </html>
